@@ -1,6 +1,6 @@
-var days = 5;
-var distance = 50;
-var speed = 25.7;
+var days = 6;
+var distance = 65;
+var speed = 24.8;
 var data = [days, distance, speed];
 
 window.onload = function() {
