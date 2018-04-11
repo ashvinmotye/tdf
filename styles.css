@@ -37,7 +37,7 @@ h1 {
 }
 
 .stat {
-  width: 30%;
+  width: 33%;
   display: inline-block;
   position: relative;
   margin-bottom: 30px;
@@ -79,20 +79,39 @@ p {
   bottom: -2px;
 }
 
+#reloadMsg {
+  color: #00b2ca;
+}
+
+.form-container {
+  margin-top: 30px;
+}
+
+input {
+  background-color: black;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 3px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #00b2ca;
+}
+
 @media (max-width: 960px) {
   h1 {
     font-size: 3em;
     padding: 50px 20px;
   }
-
   h3 {
     font-size: 3.5em;
   }
-
   p {
     font-size: 1em;
   }
-
   .stat {
     width: 50%;
   }
