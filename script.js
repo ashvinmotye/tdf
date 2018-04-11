@@ -7,22 +7,28 @@ distanceForm.addEventListener('submit', function(){
   var d = document.querySelector('input[name=\'distance\']').value;
   var t = document.querySelector('input[name=\'time\']').value;
 
-  if((validateInput(d) || validateInput(t))) {
-    sendData(d, t);
-  }
-});
-
-function validateInput(val) {
-  if (val === '0' || val === '' || Number(val) < 0) {
+  if (d === '0' || d === '' || Number(d) < 0) {
     alert('Come on, do some work!');
     return false;
   }
 
-  if (isNaN(val)) {
+  if (isNaN(d)) {
     alert('I accept only numbers!');
     return false;
   }
-}
+
+  if (t === '0' || t === '' || Number(t) < 0) {
+    alert('Come on, do some work!');
+    return false;
+  }
+
+  if (isNaN(t)) {
+    alert('I accept only numbers!');
+    return false;
+  }
+
+  sendData(d, t);
+});
 
 function sendData(d, t) {
   var params = '';
