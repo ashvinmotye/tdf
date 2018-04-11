@@ -15,8 +15,6 @@
 
   <link rel="stylesheet" href="styles.css">
 
-  <script src="script.js"></script>
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112790540-1"></script>
   <script>
@@ -36,20 +34,36 @@
 
     <div class="cards">
       <div class="stat">
-        <h3>000</h3>
+        <h3 id="daysHeader">000</h3>
         <p>days</p>
       </div>
 
       <div class="stat">
-        <h3>0000</h3>
+        <h3 id="distanceHeader">0000</h3>
         <p>km</p>
         <div id="distance"></div>
       </div>
 
       <div class="stat">
-        <h3>00.0</h3>
+        <h3 id="speedHeader">00.0</h3>
         <p>km/h</p>
       </div>
+
+      <div class="form-container">
+
+        <form id="distanceForm" method="POST" onsubmit="return false;">
+          <input type="text" name="distance" placeholder="distance">
+
+          <input type="text" name="time" placeholder="time">
+
+          <input type="submit" value="Enter">
+        </form>
+
+        <div id="reloadMsg"></div>
+      </div>
   </div>
+
+  <script src="tabletop.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
