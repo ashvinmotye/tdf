@@ -31,8 +31,6 @@ function sendData(d, t) {
   params += 'entry.27753682=' + encodeURIComponent(d);
   params += '&entry.1886953159=' + encodeURIComponent(t);
 
-  console.log(params);
-
   var http = new XMLHttpRequest();
   var url = "https://docs.google.com/forms/d/e/1FAIpQLSfHbjEY5WWFu2KzbL4E3UtuyzxRwjICgsG2XWddwaUurkFBZQ/formResponse";
 
@@ -66,8 +64,6 @@ function getSheetData() {
 function showInfo(formData, tabletop) {
   var data = formData;
   var numberOfDays = data.length;
-
-  console.log(data);
 
   document.querySelector('#daysHeader').innerHTML = numberOfDays;
 
